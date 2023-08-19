@@ -151,17 +151,21 @@ class ProductsControllers {
         products.value = value ?? products.value;
         products.category = category ?? products.category;
 
-        const ingredientsInsert = await ingredients.map(ingredient => ({
-            name: ingredient,
-            product_id: products.id
-        }))
+        
+        if(ingredients.length > 0) {
+            const ingredientsInsert = await ingredients.map(ingredient => ({
+                name: ingredient,
+                product_id: products.id
+            }))
+            
+            await knex("ingredients").where({ product_id: id }).insert(ingredientsInsert)
+        }
+            await knex("products").where({ id }).update(products)
+            await knex("products").where({ id }).update("updated_at", knex.fn.now());
+            
+            
+            return response.status(202).json('Prato atualizado com sucesso')
      
-        await knex("products").where({ id }).update(products)
-        await knex("products").where({ id }).update("updated_at", knex.fn.now());
-        await knex("ingredients").where({product_id: id }).delete();
-        await knex("ingredients").where({ product_id: id }).insert(ingredientsInsert)
-      
-        return response.status(202).json('Prato atualizado com sucesso')
     }
 }
 

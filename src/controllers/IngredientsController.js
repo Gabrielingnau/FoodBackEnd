@@ -9,6 +9,17 @@ class IngredientsController {
 
         return response.json(ingredients)
     }
+    async delete(request, response) {
+        const { id } = request.params
+
+       const ingredients = await knex("ingredients").where({ id }).delete()
+
+       if(!ingredients) {
+        throw new AppError("Não foi encontrado o ingrediente!");
+       }
+
+        return response.json()
+    }
 }
 
 module.exports = IngredientsController

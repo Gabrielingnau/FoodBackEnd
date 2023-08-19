@@ -6,6 +6,7 @@ const ingredientsRoutes = Router()
 const ingredientsControllers = new IngredientsControllers()
 
 ingredientsRoutes.get("/",ensureAuthenticated, ingredientsControllers.index)
+ingredientsRoutes.delete("/:id", ingredientsControllers.delete)
 
 module.exports = ingredientsRoutes
 
