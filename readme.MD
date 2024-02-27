@@ -28,7 +28,6 @@ In this application, the following topics were addressed:
 - [JSON Web Token](https://www.npmjs.com/package/jsonwebtoken)
 - [Multer](https://www.npmjs.com/package/multer)
 - [CORS](https://www.npmjs.com/package/cors)
-- [Axios](https://www.npmjs.com/package/axios)
 ---
 
 ## Features
