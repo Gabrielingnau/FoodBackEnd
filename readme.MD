@@ -1,21 +1,20 @@
-
 <p align="center">
   <h4 align="center">FoodBackEnd</h4>
 </p>
 
 ## 💻 About:
 
-The application developed is a digital menu for a restaurant known as foodExplorer, where it is necessary to authenticate to enter the application through the login screen.
+O aplicativo desenvolvido é um cardápio digital para um restaurante conhecido como foodExplorer, onde é necessário se autenticar para entrar no aplicativo através da tela de login.
 
-Food Explorer has two personas: the administrator and the user;
+O Food Explorer tem duas pessoas: o administrador e o usuário;
 
-The admin is the person in charge of the restaurant, so they can create, view, and delete a dish at any time. 
+O administrador é a pessoa responsável pelo restaurante, para que possa criar, visualizar e excluir um prato a qualquer momento. 
 
-The user sees all the registered dishes and, when they click on a dish, they are redirected to a new screen with more detailed information about it.
+O usuário vê todos os pratos cadastrados e, ao clicar em um prato, é redirecionado para uma nova tela com informações mais detalhadas sobre ele.
 
-Both the admin and the user can search for dishes by name.
+Tanto o administrador quanto o usuário podem pesquisar pratos por nome.
 
-In this application, the following topics were addressed:
+Nesta aplicação, foram abordados os seguintes tópicos:
 
 
 - [Node.js](https://nodejs.org/en/)
@@ -30,59 +29,58 @@ In this application, the following topics were addressed:
 - [CORS](https://www.npmjs.com/package/cors)
 ---
 
-## Features
+## Características
 
-- [x] A structured project, with a good organization of folders, division of components on the front-end, etc.
-- [x] A README.md file with the specifications on how to run the project in a dev environment.
-- [x] Users will need to authenticate to enter the application through the login screen.
-- [x] The admin will upload images to register the dishes.
-- [x] Meaningful names for functions and variables: Working a bit with Clean Code concepts.
-- [x] The admin, restaurant, and user data will be stored in a database.
-- [x] Possibility to search for the name of the dish.
+- [x] Um projeto estruturado, com uma boa organização de pastas, divisão de componentes no front-end, etc.
+- [x] Um arquivo README.md com as especificações sobre como executar o projeto em um ambiente de desenvolvimento.
+- [x] Os usuários precisarão se autenticar para entrar no aplicativo por meio da tela de login.
+- [x] O administrador fará o upload de imagens para registrar os pratos.
+- [x] Nomes significativos para funções e variáveis: Trabalhando um pouco com conceitos de Código Limpo.
+- [x] Os dados do administrador, do restaurante e do usuário serão armazenados em um banco de dados.
+- [x] Possibilidade de pesquisar o nome do prato.
 
 ---
 
-## 🚀 How to run the project.
+## 🚀 Como executar o projeto.
 
-### Prerequisites
+### Pré requisitos
 
-Before you begin, you will need to have the following tools installed on your machine:
+Antes de começar, você precisará ter as seguintes ferramentas instaladas em sua máquina:
 [Node.js] (https://nodejs.org/en/). 
-Also, it's good to have an editor to work with the code, such as [VSCode](https://code.visualstudio.com/)
+Além disso, é bom ter um editor para trabalhar com o código, como [VSCode](https://code.visualstudio.com/)
 
-
-### 🚧 Running the BackEnd (server)
+### 🚧 Executando o BackEnd (servidor)
 
 ```bash
-# Download from the repository
-$https://github.com/mewerton/FoodExplorer_BackEnd
+# Baixe o repositório
+$ https://github.com/Gabrielingnau/FoodBackEnd
 
-# Open your VS CODE and then open the Backend folder to open the project
+# Abra seu VS CODE e, em seguida, abra a pasta Backend para abrir o projeto
 $ cd FoodExplorer_BackEnd
 
-# In the BackEnd insert a port and a secret in the empty .env file
+# No BackEnd, insira uma PORT e uma SECRET no arquivo .env vazio
   AUTH_SECRET=
   PORT=
 
-# Install the necessary dependencies
-$ npm install
+# Instale as dependências necessárias
+$ npm i
 
-# Now start the BackEnd server
+# Agora inicie o servidor BackEnd
 $ npm run dev
 
-# The server will start at port:3333 - go to <http://localhost:3333>
+# O servidor iniciará na port: 3333 - vá para <http://localhost:3333>
 ```
 
 ---
 
-## Deploy the project.
+## deploy do projeto.
 
-This BackEnd was hosted directly in Render.
+Esse back-end foi hospedado diretamente no Render.
 ___
-Note: Because it is hosted on a free service, the BackEnd "hibernates" after 15 minutes of non-use.
+Nota: Por estar hospedado em um serviço gratuito, o BackEnd "hiberna" após 15 minutos sem uso.
 <br>
-If you're trying to access the site and the BackEnd is unresponsive, just wait as it will be "initializing" the services.
+Se você estiver tentando acessar o site e o BackEnd não responder, aguarde pois ele estará "inicializando" os serviços.
 <br>
-This step may take up to 1 minute, depending on the load on the Render servers.
+Essa etapa pode levar até 1 minuto, dependendo da carga nos servidores de renderização.
 
 ---
